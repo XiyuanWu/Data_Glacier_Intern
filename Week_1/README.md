@@ -1,4 +1,4 @@
-# Week 1
+# Week 1 - Version Control
 
 - Clone the VC repo (https://github.com/DataGlacier/VC.git)
 - Create a new branch
