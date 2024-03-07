@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salifort Motors Employee Retention Predictor</title>
+    <style>
+        body {
+            font-family: Barlow, Barlow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #b1cfd5, #cbb1d3); /* Gradient background */
+        }
+        form {
+            background: rgba(255, 255, 255, 0.4); /* Glass-like transparency */
+            border-radius: 30px; /* Rounded corners */
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+        }
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 20px; /* Rounded corners for inputs */
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.5); /* Light transparency for input backgrounds */
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #7eacda; /* Futuristic button color */
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 20px; /* Rounded corners for the submit button */
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #6a95d5;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <h2>Employee Retention Prediction Form</h2>
+        Satisfaction Level: <input type="text" name="satisfaction_level"><br>
+        Last Performance Rating: <input type="text" name="last_performance_rating"><br>
+        Number of Projects: <input type="text" name="number_of_projects"><br>
+        Average Monthly Hours: <input type="text" name="avg_monthly_hours"><br>
+        Years at Company: <input type="text" name="years_at_company"><br>
+        
+        Had Work Accident:
+        <select name="had_work_accident">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </select><br>
+        
+        Promoted in Last 5 Years:
+        <select name="promoted_in_last_5_years">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+        </select><br>
+        
+        Salary Level:
+        <select name="salary_level">
+            <option value="low">low</option>
+            <option value="medium">medium</option>
+            <option value="high">high</option>
+        </select><br>
+        
+        Department:
+        <select name="Department">
+            <option value="RandD">RandD</option>
+            <option value="accounting">accounting</option>
+            <option value="hr">hr</option>
+            <option value="management">management</option>
+            <option value="marketing">marketing</option>
+            <option value="product_mng">product_mng</option>
+            <option value="sales">sales</option>
+            <option value="support">support</option>
+            <option value="technical">technical</option>
+        </select><br>
+    
+        <input type="submit" value="Predict">
+
+        {% if prediction_text %}
+        <div style="margin-top: 20px; color: #a622e4; font-weight: bold;">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+        
+    </form>
+</body>
+</html>
