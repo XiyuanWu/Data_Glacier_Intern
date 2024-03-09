@@ -1,6 +1,8 @@
 # Week 5 - Deployment on Cloud
 
-This week's material is about deploying a model on the cloud.
+This week's material is about deploying a model on cloud. 
+
+Presentation mode [here](https://gamma.app/public/ML-Model-Deployment-Cloud-upg2quwrfl1h5sg).
 
 
 # Note
@@ -15,5 +17,4 @@ README.md
 __pycache__
 .pytest_cache
 ```
-
-For more information, check google [site](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/python?hl).
+For mode information, check google [site](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/python?hl).
