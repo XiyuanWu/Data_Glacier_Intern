@@ -1,4 +1,4 @@
-# Week 4 - Deployment on Flask
+# Week 4 - Deployment on Local
 
 This week's material is about deploying a model on a local machine using Flask.
 
