@@ -1,6 +1,5 @@
 # Week 6 - File Ingestion and Schema Validation
 
-## Task
 1. Take any csv/text file of 2+ GB of your choice
 2. Read the file (Present approach of reading the file)
 3. Try different methods of file reading eg, Dask, Modin, Ray, pandas and present your findings in terms of computational efficiency
