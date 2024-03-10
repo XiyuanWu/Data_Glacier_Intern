@@ -1,4 +1,4 @@
-# Data Science Intern
+# Data Glacier Intern
 
 Please check for individual folders for each week's task.
 
