@@ -9,10 +9,10 @@ Please check for individual folders for each week's task.
 - Week 4 - Deployment on Local
 - Week 5 - Deployment on Cloud
 - Week 6 - File Ingestion and Schema Validation
-- Week 7
-- Week 8
-- Week 9
-- Week 10
-- Week 11
-- Week 12
-- Week 13
+- Week 7 - Project Preparation
+- Week 8 - Plan
+- Week 9 - Data Processing
+- Week 10 - Exploratory Data Analysis
+- Week 11 - EDA Presentation
+- Week 12 - Model Selection and Building
+- Week 13 - Final Project Report and Code
